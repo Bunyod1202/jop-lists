@@ -288,7 +288,9 @@ body {
 
 @media (max-width:505px) {
   .list-item {
-    position: relative;  }
+    position: relative;  
+    margin-bottom: 40px;
+  }
 
   .list-item-left {
     display: block;
