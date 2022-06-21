@@ -93,39 +93,45 @@ body {
   border-left: 5px solid transparent;
 }
 
-.list-item:nth-child(2) .logo {
+.list-item:nth-child(1)  {
+  border-left: 5px solid #5CA5A5;
+}
+.list-item:nth-child(2)  {
+  border-left: 5px solid #5CA5A5;
+}
+.list-item:nth-child(2) .logo::before {
   background-image: url("../images/manage.svg");
 }
 
-.list-item:nth-child(3) .logo {
+.list-item:nth-child(3) .logo::before {
   background-image: url("../images/account.svg");
 }
 
-.list-item:nth-child(4) .logo {
+.list-item:nth-child(4) .logo::before {
   background-image: url("../images/myhome.svg");
 }
 
-.list-item:nth-child(5) .logo {
+.list-item:nth-child(5) .logo::before {
   background-image: url("../images/loop-studios.svg");
 }
 
-.list-item:nth-child(6) .logo {
+.list-item:nth-child(6) .logo::before {
   background-image: url("../images/gradient.svg");
 }
 
-.list-item:nth-child(7) .logo {
+.list-item:nth-child(7) .logo::before {
   background-image: url("../images/shortly.svg");
 }
 
-.list-item:nth-child(8) .logo {
+.list-item:nth-child(8) .logo::before {
   background-image: url("../images/insure.svg");
 }
 
-.list-item:nth-child(9) .logo {
+.list-item:nth-child(9) .logo::before {
   background-image: url("../images/eyecam.svg");
 }
 
-.list-item:nth-child(10) .logo {
+.list-item:nth-child(10) .logo::before {
   background-image: url("../images/griyn-logo.svg");
 }
 
@@ -149,6 +155,13 @@ body {
 .logo {
   width: 88px;
   height: 88px;
+  margin-right: 24px;
+}
+.logo::before {
+  content: "";
+  width: 88px;
+  height: 88px;
+  display:block;
   background-image: url("../images/photosnap.svg");
   background-size: cover;
   margin-right: 24px;
@@ -251,7 +264,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.btn:first-child {
+  margin-left: 0;
+}
 .btn:hover {
   background-color: var(--main-color-grey);
   color: var(--main-color-white);
