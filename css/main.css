@@ -286,7 +286,7 @@ body {
   }
 }
 
-@media (max-width:450px) {
+@media (max-width:505px) {
   .list-item {
     position: relative;  }
 
